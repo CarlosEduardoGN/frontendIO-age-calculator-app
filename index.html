@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" media="(max-width: 375px)" href="style-mobile.css" />
+  <link rel="stylesheet" media="(min-width: 376px)" href="style-desktop.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="rect">
+      <div id="day-title" class="day-title">DAY</div>
+      <input id="input_day" onkeyup="verifyday()" type="text" class="day-box" placeholder="DD">
+      <div id="invalid-day" class="invalid-day invalid-hidden">Must be a valid day</div>
+      <div id="month-title" class="month-title">MONTH</div>
+      <input id="input_month" onkeyup="verifymonth()" type="text" class="month-box" placeholder="MM">
+      <div id="invalid-month" class="invalid-month invalid-hidden">Must be a valid month</div>
+      <div id="year-title" class="year-title">YEAR</div>
+      <input id="input_year" onkeyup="verifyyear()" type="text" class="year-box" placeholder="YYYY">
+      <div id="invalid-year" class="invalid-year invalid-hidden">Must be a valid year</div>
+      <img class="line" src="assets/images/Rectangle 6.png" alt="line">
+      <div onclick="executa()" class="logo"></div>
+      <div id="year-display" class="year-display">--</div>
+      <div class="year-text">years</div>
+      <div id="month-display" class="month-display">--</div>
+      <div class="month-text">months</div>
+      <div id="days-display" class="days-display">--</div>
+      <div class="days-text">days</div>
+    </div>
+  </div>
+  <!--Day
+  DD
+
+  Month
+  MM
+
+  Year
+  YYYY
+
+  -- years
+  -- months
+  -- days-->
+  
+</body>
+</html>
